@@ -102,5 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
-draft/draft-01.js
+draft/draft-01-02.js
+draft/draft-03-04.js
+draft/draft-05-06.js
 draft/index.html
