@@ -102,5 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
-draft/draft-01.js
-draft/index.html
+
+# Custom ignore for folders and files
+draft/*
