@@ -27,10 +27,10 @@ const account = {
    */
   createTransaction(amount, type) {
     if (type === Transaction.DEPOSIT) {
-      this.balance = this.getBalance() + amount;
+      this.balance += amount;
     } else {
       // type === Transaction.WITHDRAW
-      this.balance = this.getBalance() - amount;
+      this.balance -= amount;
     }
     return {
       id: this.transactions.length + 1,
