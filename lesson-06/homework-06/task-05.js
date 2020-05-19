@@ -4,9 +4,8 @@
 import users from './users.js';
 
 // eslint-disable-next-line no-shadow
-const getUserWithEmail = (users, email) => {
-  return users.filter(user => user.email === email);
-};
+const getUserWithEmail = (users, email) =>
+  users.filter(user => user.email === email);
 
 console.log(getUserWithEmail(users, 'shereeanthony@kog.com'));
 // {объект пользователя Sheree Anthony}

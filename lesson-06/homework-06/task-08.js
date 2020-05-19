@@ -4,9 +4,8 @@
 import users from './users.js';
 
 // eslint-disable-next-line no-shadow
-const getUsersWithFriend = (users, friendName) => {
-  return users.filter(user => user.friends.includes(friendName));
-};
+const getUsersWithFriend = (users, friendName) =>
+  users.filter(user => user.friends.includes(friendName));
 
 console.log(getUsersWithFriend(users, 'Briana Decker'));
 // [ 'Sharlene Bush', 'Sheree Anthony' ]
