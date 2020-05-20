@@ -12,17 +12,9 @@ const getSortedUniqueSkills = users => {
     return skills;
   }, []);
 
-  // Способ 1.1
-  const allUniqueSkills = allSkills.filter(
-    (skill, index, array) => array.indexOf(skill) === index,
-  );
-
-  return allUniqueSkills.sort();
-
-  // Способ 1.2 - без промежуточного вычисления allUniqueSkills:
-  // return allSkills
-  //   .filter((skill, index, array) => array.indexOf(skill) === index)
-  //   .sort();
+  return allSkills
+    .filter((skill, index, array) => array.indexOf(skill) === index)
+    .sort();
 };
 
 const getSortedUniqueSkills2 = users => {
@@ -32,16 +24,9 @@ const getSortedUniqueSkills2 = users => {
       return skills;
     }, []);
 
-  // Способ 2.1
-  const getAllUniqueSkills = allSkills =>
-    allSkills.filter((skill, index, array) => array.indexOf(skill) === index);
-
-  return getAllUniqueSkills(getAllSkills(users)).sort();
-
-  // Способ 2.2 - без промежуточного использования getAllUniqueSkills():
-  // return getAllSkills(users)
-  //   .filter((skill, index, array) => array.indexOf(skill) === index)
-  //   .sort();
+  return getAllSkills(users)
+    .filter((skill, index, array) => array.indexOf(skill) === index)
+    .sort();
 };
 
 console.log(getSortedUniqueSkills(users));
