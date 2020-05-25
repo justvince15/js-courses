@@ -13,6 +13,8 @@
 
 // Создай функцию destroyBoxes(), которая очищает div#boxes.
 
+// ДАННАЯ ВЕРСИЯ СКРИПТА ПОЗВОЛЯЕТ ДОБАВЛЯТЬ DIV BOXES КАЖДЫЙ РАЗ ПРИ НАЖАТИИ "СОЗДАТЬ"
+
 const boxes = document.querySelector('#boxes');
 const divsNumber = document.querySelector('#controls input[type="number"]');
 const render = document.querySelector('button[data-action="render"]');
